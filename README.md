@@ -1,6 +1,6 @@
-# Awesome Site
+# Site dos Peaky  Blinders
 
-Bem-vindo ao Awesome Site! Este é um site simples com um design moderno inspirado no tema "Peaky Blinders". O site apresenta um título em movimento e um formulário interativo.
+Bem-vindo ao Site dos Peaky Blinders! Este é um site simples com um design moderno inspirado no tema "Peaky Blinders". O site apresenta um título em movimento e um formulário interativo.
 
 ## Conteúdo
 
@@ -10,7 +10,7 @@ Bem-vindo ao Awesome Site! Este é um site simples com um design moderno inspira
 
 ## Tecnologias Utilizadas
 
-O Awesome Site foi construído utilizando as seguintes tecnologias:
+O Site do Peaky Blinders foi construído utilizando as seguintes tecnologias:
 
 - HTML
 - CSS
@@ -20,4 +20,4 @@ O Awesome Site foi construído utilizando as seguintes tecnologias:
 1. Clone ou faça o download deste repositório.
 
 ```bash
-git clone https://github.com/seu-usuario/awesome-site.git
+git clone https://github.com/MiguelKTrasel/prova-html.git

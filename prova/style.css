@@ -1,0 +1,140 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:black; /* Google Blue */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+h1 {
+    font-size: 2em;
+    animation: moveAndChangeColor 4s;
+    white-space: nowrap;
+}
+
+@keyframes moveAndChangeColor {
+    0% {
+        transform: translateX(0);
+        color: #ff0000; /* Cor inicial (vermelho) */
+    }
+    50% {
+        transform: translateX(100%);
+        color: #00ff00; /* Cor no meio (verde) */
+    }
+    100% {
+        transform: translateX(0);
+        color: #0000ff; /* Cor final (azul) */
+    }
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+.video-section, .form-section {
+    padding: 20px;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+}
+
+form {
+    display: none;
+}
+
+.form-inner {
+    border: 2px solid #000000; /* Google Blue */
+    padding: 15px;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que o preenchimento e a borda não afetem a largura total */
+}
+
+/* Adicionando espaço entre os campos do formulário */
+.form-inner input,
+.form-inner textarea {
+    margin-bottom: 10px;
+}
+
+/* Adicionando cor de fundo quando o formulário é aberto */
+input[type="checkbox"]:checked + .toggle-form-label {
+    background-color: #3367d6; /* Darker Google Blue */
+}
+
+input[type="checkbox"]:checked ~ form {
+    display: flex;
+    flex-direction: column; /* Certifica-se de que os itens estejam empilhados verticalmente */
+    background-color: #f0f0f0; /* Cor de fundo quando o formulário é aberto */
+}
+
+input[type="checkbox"]:checked + .toggle-form-label::before {
+    content: 'Close Form';
+}
+
+input[type="checkbox"]:checked + .toggle-form-label::before {
+    content: ''; /* Remover o conteúdo antes do texto (no caso, o ícone) */
+}
+
+button {
+    cursor: pointer;
+    background-color: #f500b8;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #1900ff; /* Darker Google Blue */
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    iframe {
+        height: 200px;
+    }
+}
+
+header {
+    position: relative;
+}
+
+#site-title {
+    font-size: 2em;
+    white-space: nowrap;
+    transition: color 0.3s ease-in-out;
+    position: relative;
+}
+
+#site-title:hover {
+    color: #808080; /* Mudar a cor para cinza no hover */
+}
+
+#site-title:hover::before {
+    content: '🔫'; /* Adicionar um emoji de pistola antes do título no hover */
+    margin-right: 5px;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out; /* Adicionar transição de tamanho */
+}
+
+#site-title:hover::before {
+    width: 30px; /* Tamanho ao passar o mouse */
+    height: 30px; /* Tamanho ao passar o mouse */
+}
+
